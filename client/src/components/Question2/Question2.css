@@ -1,0 +1,25 @@
+.ansQ2{
+    width: 500px;
+    height: 430px;
+    background-color: rgba(221, 221, 208, 0.3);
+    display: inline-block;
+    margin-top: 0%;
+    font-size: 8em;
+    padding-top: 9%;
+font-family: 'Fredericka the Great', cursive;
+border: black thick solid;
+
+text-shadow: 0 0 2px black, 0 0 7px sienna;
+box-shadow: 0 0 3px black, 0 0 8px sienna;
+color: black;
+
+}
+
+#whatever{
+    position: relative;
+    left: 5%
+}
+
+#q2Text{
+    font-size: 7em;
+}

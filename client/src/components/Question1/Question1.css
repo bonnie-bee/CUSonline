@@ -1,0 +1,61 @@
+.answer1{
+    position: relative;
+    width: 410px;
+    height: 230px;
+    overflow: hidden;
+    /* float: left; */
+    object-fit: cover;
+    border: black thick solid;
+    /* box-shadow: 0 3px 6px #000, 0 3px 6px #000; */
+box-shadow: 0 0 3px black, 0 0 8px sienna
+
+}
+
+.question{
+    position: relative;
+/* Font list */
+font-family: 'Roboto Slab', serif;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Sanchez', serif;  
+font-family: 'Kameron', serif;
+font-family: 'Fredericka the Great', cursive;
+/* font-family: 'Vast Shadow', cursive; */
+/* font-family: 'Rye', cursive; */
+/* font-family: 'Diplomata', cursive; */
+/* font-family: 'Smokum', cursive;   */
+font-size: 5em;
+color: black;
+margin-top: 4.5%;
+text-shadow: 0 0 2px black, 0 0 7px sienna
+}
+
+#ansSet1{
+    position: relative;
+    display: inline-block;
+    left: -2%;
+    margin-top: -1%
+}
+
+#ansSet2{
+    position: relative;
+    left: -2%;
+    margin-top: 2%
+}
+
+/* #ans1{
+left: 5%;
+margin-top: -2%;
+}*/
+
+#ans2{
+left: 8%;
+}
+
+/*#ans3{
+margin-top: 20%;
+right: 50%;
+}*/
+
+#ans4{
+left: 5%;
+} 

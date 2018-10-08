@@ -1,0 +1,58 @@
+.ansQ4{
+    position: relative;
+    height: 240px;
+    width: 350px;
+    background-color: rgba(221, 221, 208, 0.3);
+    display: inline-block;
+    /* margin-top: 5%; */
+    /* font-size: 2em; */
+    padding-top: 2%;
+    font-family: 'Fredericka the Great', cursive;
+    border: black thick solid;
+    text-shadow: 0 0 2px black, 0 0 7px sienna;
+    box-shadow: 0 0 3px black, 0 0 8px sienna;
+    color: black;
+    margin-top: -1%;
+}
+
+#q4Text{
+    font-size: 4.3em;
+    margin-top: 5%;
+}
+
+#ansSet4a{
+    margin-top: 2%;
+}
+
+#ansSet4b{
+    margin-top: -1.5%;
+}
+
+.leftSide{
+    margin-left: 5%;
+}
+
+#q4a1{
+    font-size: 6em;
+    left: 4%;
+}
+
+#q4a2{
+    font-size: 6em;
+}
+#q4a3{
+    font-size: 6em;
+    right: 4%;
+}
+#q4a4{
+    font-size: 4em;
+    padding-top: 4%;
+    left: 2%;
+}
+#q4a5{
+    font-size: 5.5em;
+    padding-top: 2%;
+    margin-top: 1%;
+    right: 2%;
+
+}
