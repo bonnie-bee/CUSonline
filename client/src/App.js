@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import moment from "moment";
+import API from "./utils/API";
 import Chilicorn from "./components/Chilicorn";
 import Chiligirl from "./components/Chiligirl";
 import Unicorn from "./components/Unicorn";
@@ -13,6 +15,7 @@ import Result from "./pages/Result"
 import NoMatch from "./components/NoMatch";
 
 
+
 class App extends Component {
 
   constructor(props) {
@@ -20,12 +23,13 @@ class App extends Component {
 
     this.state = {
       total: 0,
-      result: ""
+      result: "",
+      currentDay: []
     }
 
     this.editState = this.editState.bind(this);
     this.finalResult = this.finalResult.bind(this);
-    // this.reset = this.reset.bind(this)
+    this.getResults = this.getResults.bind(this);
   };
 
 
@@ -62,24 +66,48 @@ class App extends Component {
     setTimeout(function () {
       window.location.assign("/");
       let total = 0;
-    let result = "";
-    this.setState({ total: total, result: result})
+      let result = "";
+      this.setState({ total: total, result: result })
     }, 7000)
   }
 
-  // reset(){
-  //   let total = 0;
-  //   let result = "";
-  //   this.setState({ total: total, result: result})
-  // }
+  newResults() {
+    let today = moment().format("MMM Do YY");
+    API.saveResult({
+      resultType: [{ id: 1, name: "chiligirl", amount: 0 }, { id: 2, name: "unicorn", amount: 0 }, { id: 3, name: "chilicorn", amount: 0 }],
+      date: today
+    })
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
+  }
+
+  updateResult = (resultType) => {
+    let today = (moment().format("MMM Do YY"));
+    API.updateResult({
+      resultType: resultType,
+      date: today
+    })
+      .then(res => this.getResults())
+      .catch(err => console.log(err));
+  }
+
+  getResults = () => {
+    API.getResults()
+      .then(res => {
+        let today = res.data.length - 1;
+        let currentResult = res.data[today].resultType
+        this.setState({ currentDay: currentResult })
+      })
+      .catch(err => console.log(err))
+  }
+
 
   render() {
-    console.log("result: " + this.state.total + ", " + this.state.result)
     return (
       <Router>
         <Switch>
           <Route exact path="/" render={(props) => (
-            <StartScreen {...props} reset={this.reset} />
+            <StartScreen {...props} newResults={this.newResults} />
           )} />
           <Route exact path="/question/1" render={(props) => (
             <Question1 {...props} questionValue={this.editState} />
@@ -97,16 +125,16 @@ class App extends Component {
             <Question5 {...props} finalValue={this.finalResult} />
           )} />
           <Route exact path="/result/chiligirl" render={(props) => (
-            <Chiligirl {...props} timer={this.timer} />
+            <Chiligirl {...props} timer={this.timer} updateResult={this.updateResult} />
           )} />
           <Route exact path="/result/unicorn" render={(props) => (
-            <Unicorn {...props} timer={this.timer} />
+            <Unicorn {...props} timer={this.timer} updateResult={this.updateResult}/>
           )} />
           <Route exact path="/result/chilicorn" render={(props) => (
-            <Chilicorn {...props} timer={this.timer} />
+            <Chilicorn {...props} timer={this.timer} updateResult={this.updateResult} />
           )} />
           <Route exact path="/result" render={(props) => (
-            <Result {...props} />
+            <Result {...props} getResults={this.getResults} result={this.state.currentDay} />
           )} />
           <Route component={NoMatch} />
 

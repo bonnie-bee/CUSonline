@@ -1,18 +1,25 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route} from "react-router-dom";
 import "./Result.css";
-import Chiligirl from "../../components/Chiligirl";
-import Chilicorn from "../../components/Chilicorn";
-import Unicorn from "../../components/Unicorn";
 
 class Result extends Component {
-    render() {
-    console.log(this.props)
 
-    
+    componentDidMount() {
+        this.props.getResults()
+    }
+
+    render() {
 
         return (
-            <h1>HERE ARE THE RESULTS FOR TODAY</h1>
+            <div>
+                <h1>HERE ARE THE RESULTS FOR TODAY</h1>
+                <ul>
+                    {this.props.result.map(result => (
+                        <li key={result.id}>
+                            {result.name} : {result.amount}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         )
     }
 };

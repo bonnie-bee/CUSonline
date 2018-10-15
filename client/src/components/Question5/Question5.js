@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Question5.css";
 import chiligirl from "./images/chiligirl.jpg";
 import unicorn from "./images/unicorn5.jpeg";

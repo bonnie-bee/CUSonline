@@ -4,6 +4,9 @@ import "./StartScreen.css";
 
 class StartScreen extends Component {
     render() {
+        this.props.newResults("unicorn");
+        this.props.newResults("chiligirl");
+        this.props.newResults("chilicorn");
         return(
             <div className="BGBox">
                 <Link id="startBtn" to='/question/1'>
