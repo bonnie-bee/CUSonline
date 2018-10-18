@@ -11,8 +11,8 @@ const Question3 = (props) => {
         <div className="BGBox">
             <p className="question" id="q3Text">Which chili do you want?</p>
             <Link to='/question/4'><img className="answer3" value="0" id="chiliPic1" src={chili1} onClick={props.questionValue} alt="A ranch house" /></Link>
-            <Link to='/question/4'><img className="answer3" value="-1" id="chiliPic2" src={chili2} onClick={props.questionValue} alt="A forest with light shining through the trees" /></Link>
-            <Link to='/question/4'><img className="answer3" value="1" id="chiliPic3" src={chili3} onClick={props.questionValue} alt="A covered wagon" /></Link>
+            <Link to='/question/4'><img className="answer3" value="1" id="chiliPic2" src={chili2} onClick={props.questionValue} alt="A forest with light shining through the trees" /></Link>
+            <Link to='/question/4'><img className="answer3" value="-1" id="chiliPic3" src={chili3} onClick={props.questionValue} alt="A covered wagon" /></Link>
         </div>
     );
 
