@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Question3.css";
 import chili1 from "../../images/chili1.jpg";
 import chili2 from "../../images/chili5.JPG";
-import chili3 from "../../images/chili4.jpg";
+import chili3 from "../../images/chili6.jpeg";
 
 const Question3 = (props) => {
 
