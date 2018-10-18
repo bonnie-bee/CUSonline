@@ -1,29 +1,56 @@
-.resultHeader{
-    font-size: 15em;
-    text-align: center;
-    padding-top: 13%;
+
+/* animations for the clouds */
+@keyframes animatedCloud {
+	from { background-position: 100% 100%; }
+	to { background-position: 0% 100%; }
+}
+    
+/* animations for the unicorn */
+@keyframes animatedUnicorn {
+    0% { background-position: -20% -30%; background-transform: translate(1px, 1px) rotate(20deg);  }
+    10% {background-position: -5% -10%; background-transform: translate(-1px, -2px) rotate(-1deg);}
+    /* 20% {background-position: 15% 90%} */
+    20% {background-position: 15% 80%}
+    30% {background-position: 30% -10% }
+    40% {background-position: 45% -30%}
+    50% {background-position: 60% -10% }
+    /* 60% {background-position: 75% 90%} */
+    60% {background-position: 75% 80%}
+    70% {background-position: 90% -10%}
+    80% {background-position: 100% -30%}
+	100% { background-position: 120% -10% }
 }
 
-.bgClouds{
-    position: absolute;
-    width: 100%;
-    height: 35%;
-    background-image: url(../../images/bgClouds2.png);
-    background-position: 0px, 0px;
-    background-repeat: repeat-x;
-    z-index: 4;
-    /* background-color: black; */
+.resultHeader{ 
+    font-size: 20em;
+    text-align: center;
+    padding-top: 13%;
+  
 }
+
 #uniHeader{
     color: white;
     background-color: rgba(0,0,0,0);
-    z-index: 2
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:  url(../../images/unicorn1.png);
+    background-position: 0% 30%;
+    background-repeat: no-repeat;
+    animation-direction: alternate;
+	animation: animatedUnicorn 8s linear infinite;
 }
 #uniBGDiv{
     background-color: skyblue;
     position: absolute;
     height: 100%; 
-    width: 100%
+    width: 100%;
+    background-image: url(../../images/bgClouds2.png);
+    background-position: 100% 100%;
+    background-repeat: repeat-x;
+    animation: animatedCloud 15s linear infinite;
+    overflow: hidden;    
 } 
 
 #uRes{

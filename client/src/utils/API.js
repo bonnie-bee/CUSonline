@@ -5,7 +5,7 @@ export default {
   getResults: function() {
     return axios.get("/api/results");
   },
-  // updates the result with the given id
+  // updates the amount of a specific result type
   updateResult: function(updateData) {
     return axios.post("/api/results/update", updateData);
   },

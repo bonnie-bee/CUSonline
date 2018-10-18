@@ -9,13 +9,12 @@ class Unicorn extends Component {
     }
 
 
-
+ 
     render() {
 
         return (
             <div id="uniBGDiv">
                 <h1 id="uniHeader" className="resultHeader"><span id="uRes" >U</span><span id="n1Res">N</span><span id="iRes">I</span><span id="cRes">C</span><span id="oRes">O</span><span id="rRes">R</span><span id="n2Res">N</span></h1>
-                <div className="bgClouds"></div>
             </div>
         )
     }

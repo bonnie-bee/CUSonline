@@ -7,10 +7,7 @@ import barn from "../../images/barn1c.jpg";
 import wagon from "../../images/chuck3.jpeg";
 
 class Question1 extends Component {
-    // console.log(props.data.color);
-    // let thing1= props.data.hello;
-    // console.log(thing1);
-    // thing1();
+    
     render() {
         
         return (

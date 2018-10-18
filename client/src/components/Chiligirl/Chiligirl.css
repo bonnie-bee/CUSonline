@@ -1,13 +1,206 @@
 #girlHeader{
+    position: absolute;
     color: white;
     text-shadow: 0 0 5px white, 0 0 15px white, 0 0 25px hotpink, 0 0 35px hotpink, 0 0 50px pink;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 6em;
+    font-family: 'League Script', cursive;
+    /* font-size: 23em; */
+    font-size: 23em;
+    /* letter-spacing: 4; */
+    letter-spacing: -6px;
+    /* left: 7%; */
+    left: 4%;
+    /* top: 7%; */
+    top: 11%;
 }
  
 #girlBGDiv{
-    background-color: black;
+    background-color: #680628;
     position: absolute;
     height: 100%;
     width: 100%;
-} 
+    overflow: hidden;
+
+}  
+
+@keyframes chiliShake {
+    0% { transform: translate(2px, 2px) rotate(0deg); }
+    10% { transform: translate(-2px, -3px) rotate(-1deg); }
+    20% { transform: translate(-4px, -1px) rotate(1deg); }
+    30% { transform: translate(4px, 3px) rotate(0deg); }
+    40% { transform: translate(2px, -2px) rotate(1deg); }
+    50% { transform: translate(-2px, 3px) rotate(-1deg); }
+    60% { transform: translate(-4px, 2px) rotate(0deg); }
+    70% { transform: translate(4px, 2px) rotate(-1deg); }
+    80% { transform: translate(-2px, -2px) rotate(1deg); }
+    90% { transform: translate(2px, 3px) rotate(0deg); }
+    100% { transform: translate(2px, -3px) rotate(-1deg); }
+}
+
+.chilipots{
+    position: absolute;
+    /* box-shadow: 10px 10px 5px red; */
+
+}
+
+#chili1{
+    left: 5%;
+    animation: chiliShake 0.5s; 
+    animation-delay: 1.5s;
+}
+
+#chili2{
+     left: 25%;
+}
+
+#chili4{
+    left: 15%;
+    top: 18%;
+}
+
+#chili5{
+    left: 45%;
+}
+
+#chili6{
+    left: 35%;
+    top: 18%;
+    animation: chiliShake 0.5s; 
+    animation-delay: 1s;
+    
+}
+
+#chili7{
+    left: 55%;
+    top: 18%;
+}
+
+#chili8{
+    left: 75%;
+    top: 18%;
+    animation: chiliShake 0.5s; 
+    animation-delay: 3.5s;
+}
+
+#chili9{
+    left: 65%;
+    animation: chiliShake 0.5s; 
+    animation-delay: 5.5s;
+}
+
+#chili10{
+    left: 85%
+}
+
+#chili11{
+    top: 18%;
+    left: -3%;
+    animation: chiliShake 0.5s; 
+    animation-delay: 6.5s;
+    
+}
+
+#chili12{
+    top: 40%;
+    left: 5%;
+}
+
+#chili13{
+    top: 18%;
+    right: -1%;
+    animation: chiliShake 0.5s; 
+    animation-delay: 5s;
+}
+
+#chili14{
+    top: 40%;
+    left: 25%;
+    animation: chiliShake 0.5s; 
+    animation-delay: 3s;
+}
+
+#chili15{
+    top: 40%;
+    left: 45%;
+}
+
+#chili16{
+    top: 40%;
+    left: 65%;
+    animation: chiliShake 0.5s; 
+}
+
+#chili17{
+    top: 40%;
+    left: 85%;
+}
+
+#chili18{
+    top:62%;
+    left: -3%;
+    animation: chiliShake 0.5s; 
+    animation-delay: 4s;
+}
+
+#chili19{
+    top:62%;
+    left: 15%;
+}
+
+#chili20{
+    top:62%;
+    left: 35%;
+    animation: chiliShake 0.5s; 
+    animation-delay: 2s;
+}
+
+#chili21{
+    top:62%;
+    left: 55%;
+}
+
+#chili22{
+    top:62%;
+    left: 75%;  
+    animation: chiliShake 0.5s; 
+    animation-delay: 6s;  
+}
+
+#chili23{
+    top:62%;
+    right: -1%;
+}
+
+#chili24{
+    top:84%;
+    left: 5%;
+}
+
+#chili25{
+    top:84%;
+    left: 25%;
+    animation: chiliShake 0.5s; 
+    animation-delay: 2.5s;
+    
+}
+
+#chili26{
+    top:84%;
+    left: 45%;
+    
+}
+
+#chili27{
+    top:84%;
+    left: 65%;
+    animation: chiliShake 0.5s; 
+    animation-delay: 4.5s;
+
+}
+
+#chili28{
+    top:84%;
+    left: 85%; 
+    animation: chiliShake 0.5s; 
+    animation-delay: 0.5s;  
+}
+

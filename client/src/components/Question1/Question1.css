@@ -13,16 +13,7 @@ box-shadow: 0 0 3px black, 0 0 8px sienna
 
 .question{
     position: relative;
-/* Font list */
-font-family: 'Roboto Slab', serif;
-font-family: 'Alfa Slab One', cursive;
-font-family: 'Sanchez', serif;  
-font-family: 'Kameron', serif;
 font-family: 'Fredericka the Great', cursive;
-/* font-family: 'Vast Shadow', cursive; */
-/* font-family: 'Rye', cursive; */
-/* font-family: 'Diplomata', cursive; */
-/* font-family: 'Smokum', cursive;   */
 font-size: 5em;
 color: black;
 margin-top: 4.5%;

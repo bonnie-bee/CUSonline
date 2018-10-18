@@ -1,26 +1,21 @@
 const db = require("../models");
 
-// Defining methods for the booksController
 module.exports = {
+  //finds everything in the database
   findAll: function(req, res) {
     db.Result
       .find(req.query)
-      // .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => console.log(err));
   },
-  findById: function(req, res) {
-    db.Result
-      .findById(req.params.id)
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-  },
+  //makes a new document and let's you know if you've already done that today
   create: function(req, res) {
     db.Result
       .create(req.body)
       .then(dbModel => res.json(dbModel))
-      .catch(err => console.log(err));
+      .catch(err => console.log("There's already a document for today!"));
   },
+  //finds the result type (chiligirl, unicorn, chilicorn) for the specific and updates the amount by 1
   update: function(req, res) {
     db.Result
       .findOneAndUpdate({ 'resultType.name': req.body.resultType, 'date': req.body.date }, {$inc: {'resultType.$.amount': 1}}, req.body)

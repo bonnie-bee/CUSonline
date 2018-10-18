@@ -1,11 +1,9 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import "./Question5.css";
-import chiligirl from "./images/chiligirl.jpg";
-import unicorn from "./images/unicorn5.jpeg";
+import chiligirl from "../../images/chiligirl.jpg";
+import unicorn from "../../images/unicorn5.jpeg";
 
 const Question5 = (props) => {
-    console.log(props)
     return (
         <div className="BGBox">
             <p className="question" id="q5Text">Who's your best friend?</p>

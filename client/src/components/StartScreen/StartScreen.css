@@ -1,3 +1,7 @@
+body {
+    overflow:hidden;
+}
+
 .BGBox{
     position: absolute;
     height: 85%;
@@ -15,68 +19,250 @@
     background-size: 100% 100%;
     /* border:4px black ridge; */
     /* border-image: url(../../images/ropeBorder2.png) 50 ; */
-    text-align: center;
+    text-align: center;   
 }
 
-.startText{
+.startBox{
     text-align: center;
     /* color: black; */
     /* text-shadow: 0 0 2px black, 0 0 11px rgb(99, 50, 0), 0 0 11px rgb(193, 126, 9), 0 0 14px rgb(242, 139, 36), 0 0 19px rgba(255, 221, 0, 0.8); */
     text-shadow: 0 0 2px black, 0 0 7px sienna, 0 0 11px sienna;  
-    font-size: 7em;
+    font-size: 5.5em;
     font-family: 'Fredericka the Great', cursive;
     letter-spacing: 3px;
-    margin-top: 5%;
     /* opacity: 0.8; */
     color: black;
 } 
+
+/* animation to shake the words */
+@keyframes startShake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    .2% { transform: translate(-2px, -2px) rotate(-1deg); }
+    .4% { transform: translate(-3px, 0px) rotate(1deg); }
+    .6% { transform: translate(3px, 2px) rotate(0deg); }
+    .8% { transform: translate(1px, -2px) rotate(1deg); }
+    1% { transform: translate(-1px, 2px) rotate(-1deg); }
+    1.2% { transform: translate(-3px, 1px) rotate(0deg); }
+    1.4% { transform: translate(3px, 1px) rotate(-1deg); }
+    1.6% { transform: translate(-1px, -1px) rotate(1deg); }
+    1.8% { transform: translate(1px, 2px) rotate(0deg); }
+    2% { transform: translate(1px, -2px) rotate(-1deg); }
+    2.2% { transform: translate(-1px, 2px) rotate(1deg); }
+    2.4%, 100% { transform: translate(0px, 0px) rotate(0deg); }
+
+}
+
+#areYou{
+    position: absolute;
+    /* top: 9%; */
+    top: 12%;
+    left: 30%
+}
+#chiligirlStart{
+    position: absolute;
+    /* font-size: 2.2em; */
+    font-size: 2em;
+    /* top: 19%; */
+    top: 23%;
+    /* left: 6.4%; */
+    left: 7.5%;
+    animation: startShake 17s infinite; 
+    animation-delay: 17s;
+}
+
+#orA{
+    position: absolute;
+    top:49%;
+    /* left: 42% */
+    left: 40%
+}
+
+#unicornStart{
+    position: absolute;
+    font-size: 2.2em;
+    top:59%;
+    /* left: 15%; */
+    left: 12%;
+    animation: startShake 26s infinite; 
+}
 
 a:hover{
     text-decoration: none;
 }
 
+/* animation for the chiligirl */
+@keyframes chiliwave{
+    0%, 40%{transform: translate(-63%, 0%) rotateZ(-40deg) }
+    45%, 60%{transform: translate(0%, 0%) rotateZ(0deg) }
+    65%, 100%{transform: translate(-63%, 0%) rotateZ(-40deg) }
+}
+#chiligirlWave{
+    position: absolute;
+    right: 70%;
+    top: 20%;
+    opacity: 0%;
+    animation: chiliwave 30s infinite;
+    animation-delay: 18s;
+    animation-fill-mode: backwards;
+}
+
+#chiliWords{
+    position: absolute;
+    left: 1%;
+    top: 21%;
+    font-size: 4.5em;
+    line-height: 70px;
+
+}
+
+/* animation to show the speech bubbles */
+@keyframes speech{
+    0%, 45%{opacity: 0}
+    46%, 60%{opacity: 1}
+    61%, 100%{opacity: 0}
+}
+
+.speech1{
+    position: relative;
+    left: 15%;
+    top: 7%;
+    width: 400px;
+    height: 320px;
+    opacity: 0%;
+    text-align: center;
+    background-color: rgba(255,255,255,.8);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 160px;
+    z-index: 2;
+    transform: rotateZ(26deg);
+    animation: speech 30s infinite;
+    animation-delay: 18s;
+    animation-fill-mode: both;
+}
+
+.speech1:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 31px;
+    top: 288px;
+    border: 28px solid;
+    border-color: rgba(255,255,255,.8) transparent transparent rgba(255,255,255,.8);
+    transform: rotateZ(32.5deg);    
+
+  }
+
+  /* animation for the unicorn */
+  @keyframes uniwave{
+    0%, 40%{transform: translate(78%, 0%) rotateZ(0deg) }
+    45%, 60%{transform: translate(0%, 0%) rotateZ(30deg)}
+    65%, 100%{transform: translate(78%, 0%) rotateZ(0deg)}
+  }
+
+#unicornWave{
+    position: absolute;
+    top: 19%;
+    /* left: 82%; */
+    left: 79%;
+    opacity: 0%;
+    animation: uniwave 30s infinite;
+    animation-delay: 31s;
+    animation-fill-mode: both;
+
+}
+
+.speech2{
+    position: relative;
+    /* left: 62%; */
+    left: 57%;
+    /* top: -37%; */
+    top: -26%;
+    width: 320px;
+    height: 260px;
+    opacity: 0%;
+    text-align: center;
+    background-color: rgba(255,255,255,.8);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 160px;
+    z-index: 2;
+    transform: rotateZ(-23deg);
+    animation: speech 30s infinite;
+    animation-delay: 31.2s;
+    animation-fill-mode: both;
+
+}
+
+.speech2:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 77%;
+    top: 89%;
+    border: 28px solid;
+    transform: rotateZ(57deg);
+    border-color:   rgba(255,255,255,.8) transparent transparent rgba(255,255,255,.8);
+
+}
+
+#uniWords{
+    position: absolute;
+    font-size: 6em;
+    right: 7%;
+    top: 19%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 #u{
     color:#af0000;
-    /* color:black; */
     text-shadow: 0 0 2px black, 0 0 7px #d80000;  
 }
 
 #n1{
     color:#c16000;
-    /* color:black; */
     text-shadow: 0 0 2px black, 0 0 7px rgb(233, 74, 1);  
 }
 
 #i{
     color:#c2c206;
-    /* color:black; */
     text-shadow: 0 0 2px black, 0 0 7px rgb(244, 248, 0);  
 }
 
 #c{
     color:#00a800;
-    /* color:black; */
     text-shadow: 0 0 2px black, 0 0 7px rgb(45, 226, 0);  
 
 }
 
 #o{
     color:#01c0c0;
-    /* color:black; */
     text-shadow: 0 0 2px black, 0 0 7px rgb(0, 230, 247);  
 
 }
-
+ 
 #r{
     color:#0000a8;
-    /* color:black; */
     text-shadow: 0 0 2px black, 0 0 7px rgb(3, 58, 238);  
 
 }
 
 #n2{
     color:#5d00a8;
-    /* color:black; */
     text-shadow: 0 0 2px black, 0 0 7px #8b00ff;  
 
-}
+} */

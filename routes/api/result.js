@@ -6,9 +6,8 @@ router.route("/")
   .get(resultController.findAll)
   .post(resultController.create);
 
-// Matches with "/api/results/:id"
+// Matches with "/api/results/update"
 router.route("/update")
-  .get(resultController.findById)
   .post(resultController.update)
 
 module.exports = router;
