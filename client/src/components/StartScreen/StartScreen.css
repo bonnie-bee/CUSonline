@@ -27,7 +27,7 @@ body {
     /* color: black; */
     /* text-shadow: 0 0 2px black, 0 0 11px rgb(99, 50, 0), 0 0 11px rgb(193, 126, 9), 0 0 14px rgb(242, 139, 36), 0 0 19px rgba(255, 221, 0, 0.8); */
     text-shadow: 0 0 2px black, 0 0 7px sienna, 0 0 11px sienna;  
-    font-size: 5.5em;
+    font-size: 5.5vw;
     font-family: 'Fredericka the Great', cursive;
     letter-spacing: 3px;
     /* opacity: 0.8; */
@@ -61,11 +61,11 @@ body {
 #chiligirlStart{
     position: absolute;
     /* font-size: 2.2em; */
-    font-size: 2em;
-    /* top: 19%; */
-    top: 23%;
-    /* left: 6.4%; */
-    left: 7.5%;
+    font-size: 12.5vw;
+    top: 19%;
+    /* top: 23%; */
+    left: 6.4%;
+    /* left: 7.5%; */
     animation: startShake 17s infinite; 
     animation-delay: 17s;
 }
@@ -79,10 +79,10 @@ body {
 
 #unicornStart{
     position: absolute;
-    font-size: 2.2em;
+    font-size: 12.5vw;
     top:59%;
-    /* left: 15%; */
-    left: 12%;
+    left: 15%;
+    /* left: 12%; */
     animation: startShake 26s infinite; 
 }
 
