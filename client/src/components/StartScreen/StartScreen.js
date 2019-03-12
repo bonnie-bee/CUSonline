@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./StartScreen.css";
-import chiligirl from "../../images/chiligirl1.png";
-import unicorn from "../../images/unicorn2.png"
+const unicorn = require("../../images/unicorn2.png");
+const chiligirl = require("../../images/chiligirl1.png");
 
 
 class StartScreen extends Component {
