@@ -91,7 +91,7 @@ a:hover{
 #chiligirlWave{
     height: 516px;
     width: 600px;
-    background-image: url("../../images/chiligirl1.png");
+    background-image: url(../../images/chiligirl1.png);
     position: absolute;
     right: 70%;
     top: 20%;
@@ -159,7 +159,7 @@ a:hover{
 #unicornWave{
     height: 700px;
     width: 700px;
-    background-image: url("../../images/unicorn2.png");
+    background-image: url(../../images/unicorn2.png);
     position: absolute;
     top: 19%;
     /* left: 82%; */
