@@ -62,7 +62,7 @@
     left: 30%;
     /* top: 11%; */
     top: 16%;
-    font-size: 8em;
+    font-size: 8vw;
     font-family: 'League Script', cursive;        
 
 }
@@ -73,9 +73,9 @@
     /* top: 3%; */
     top: 12%;
     /* left: 3%; */
-    left: 2.5%;
+    left: 7vw;
     opacity: 0;
     animation: fadein 3s forwards;
     animation-delay: 2.5s;
-    font-size: 19em;
+    font-size: 19vw;
 }

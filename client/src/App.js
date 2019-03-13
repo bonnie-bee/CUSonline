@@ -121,7 +121,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router> 
         <Switch>
           <Route exact path="/" render={(props) => (
             <StartScreen {...props} newResults={this.newResults} />

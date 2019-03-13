@@ -1,12 +1,12 @@
 .ansQ2{
-    width: 500px;
-    height: 430px;
+    width: 30vw;
+    height: 40vh;
     background-color: rgba(221, 221, 208, 0.3);
     display: inline-block;
     /* margin-top: 0%; */
     margin-top: 1%;
-    font-size: 8em;
-    padding-top: 9%;
+    font-size: 9vw;
+    padding-top: 4vh;
     font-family: 'Fredericka the Great', cursive;
     border: black thick solid;
 
@@ -27,5 +27,5 @@
 }
 
 #q2Text{
-    font-size: 7em;
+    font-size: 7vw;
 }

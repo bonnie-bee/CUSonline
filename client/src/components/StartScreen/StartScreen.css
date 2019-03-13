@@ -1,39 +1,3 @@
-body {
-    overflow:hidden;
-}
-
-.BGBox{
-    position: absolute;
-    height: 85%;
-    width: 85%;
-    left: 7.5%;
-    top: 7.5%;
-    /* background-image: url(../../images/board-brown-dried-172298.jpg); */
-    /* background-image: url(../../images/abstract-antique-backdrop-164005.jpg); */
-    /* background-image: url(../../images/abstract-antique-background-172277.jpg); */
-    background-image: url(../../images/ropeBorder2.png);
-    /* background-image: url(../../images/tileable_wood_texture.png); */
-    /* background-image: url(../../images/tileable_wood_texture_@2X.png); */
-     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    /* border:4px black ridge; */
-    /* border-image: url(../../images/ropeBorder2.png) 50 ; */
-    text-align: center;   
-}
-
-.startBox{
-    text-align: center;
-    /* color: black; */
-    /* text-shadow: 0 0 2px black, 0 0 11px rgb(99, 50, 0), 0 0 11px rgb(193, 126, 9), 0 0 14px rgb(242, 139, 36), 0 0 19px rgba(255, 221, 0, 0.8); */
-    text-shadow: 0 0 2px black, 0 0 7px sienna, 0 0 11px sienna;  
-    font-size: 5.5vw;
-    font-family: 'Fredericka the Great', cursive;
-    letter-spacing: 3px;
-    /* opacity: 0.8; */
-    color: black;
-} 
-
 /* animation to shake the words */
 @keyframes startShake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -49,20 +13,48 @@ body {
     2% { transform: translate(1px, -2px) rotate(-1deg); }
     2.2% { transform: translate(-1px, 2px) rotate(1deg); }
     2.4%, 100% { transform: translate(0px, 0px) rotate(0deg); }
-
 }
+
+body {
+    overflow:hidden;
+}
+
+/* board and rope background box */
+.BGBox{
+    position: absolute;
+    height: 85vh;
+    width: 85vw;
+    left: 7.5vw;
+    top: 7vh;
+    background-image: url(../../images/ropeBorder2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    text-align: center;   
+}
+
+/*text*/
+.startBox{
+    text-align: center;
+    text-shadow: 0 0 3px rgb(0, 0, 0), 0 0 10px rgb(160, 82, 45), 0 0 14px rgb(160, 82, 45), 0 0 20px rgb(192, 104, 64);  
+    font-size: 5.2vw;
+    font-family: 'Fredericka the Great', cursive;
+    letter-spacing: 3px;
+    opacity: 0.8;
+    color: rgb(37, 16, 3);
+} 
 
 #areYou{
     position: absolute;
     /* top: 9%; */
-    top: 12%;
+    top: 10%;
     left: 30%
 }
 #chiligirlStart{
     position: absolute;
     /* font-size: 2.2em; */
     font-size: 12.5vw;
-    top: 19%;
+    top: 17%;
     /* top: 23%; */
     left: 6.4%;
     /* left: 7.5%; */
@@ -80,7 +72,7 @@ body {
 #unicornStart{
     position: absolute;
     font-size: 12.5vw;
-    top:59%;
+    top:57%;
     left: 15%;
     /* left: 12%; */
     animation: startShake 26s infinite; 
@@ -97,6 +89,9 @@ a:hover{
     65%, 100%{transform: translate(-63%, 0%) rotateZ(-40deg) }
 }
 #chiligirlWave{
+    height: 516px;
+    width: 600px;
+    background-image: url("../../images/chiligirl1.png");
     position: absolute;
     right: 70%;
     top: 20%;
@@ -162,6 +157,9 @@ a:hover{
   }
 
 #unicornWave{
+    height: 700px;
+    width: 700px;
+    background-image: url("../../images/unicorn2.png");
     position: absolute;
     top: 19%;
     /* left: 82%; */

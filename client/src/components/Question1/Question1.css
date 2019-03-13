@@ -1,23 +1,21 @@
 .answer1{
     position: relative;
-    width: 410px;
-    height: 230px;
+    width: 25vw;
+    height: 25vh;
     overflow: hidden;
-    /* float: left; */
     object-fit: cover;
     border: black thick solid;
     /* box-shadow: 0 3px 6px #000, 0 3px 6px #000; */
-box-shadow: 0 0 3px black, 0 0 8px sienna
-
+    box-shadow: 0 0 3px black, 0 0 8px sienna
 }
 
 .question{
     position: relative;
-font-family: 'Fredericka the Great', cursive;
-font-size: 5em;
-color: black;
-margin-top: 4.5%;
-text-shadow: 0 0 2px black, 0 0 7px sienna
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 5vw;
+    color: black;
+    margin-top: 4.5%;
+    text-shadow: 0 0 2px black, 0 0 7px sienna
 }
 
 #ansSet1{
@@ -39,7 +37,7 @@ margin-top: -2%;
 }*/
 
 #ans2{
-left: 8%;
+    left: 8%;
 }
 
 /*#ans3{
@@ -48,5 +46,5 @@ right: 50%;
 }*/
 
 #ans4{
-left: 5%;
+    left: 5%;
 } 
